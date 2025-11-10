@@ -1,24 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/head') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cats</title>
-    <link rel="stylesheet" href="/app.css">
 
-</head>
+    <body>
+        <%- include('partials/navbar') %>
 
-<body>
-    <h1>all the cats</h1>
-    <ul>
-        <% for (let cat of cats) { %>
-            <li>
-                <%= cat %>
-            </li>
+            <h1>all the cats</h1>
+            <ul>
+                <% for (let cat of cats) { %>
+                    <li>
+                        <%= cat %>
+                    </li>
 
-            <% } %>
-    </ul>
-</body>
+                    <% } %>
+            </ul>
+    </body>
 
-</html>
+    </html>
